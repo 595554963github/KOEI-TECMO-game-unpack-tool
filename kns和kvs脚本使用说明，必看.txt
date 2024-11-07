@@ -1,0 +1,23 @@
+这个脚本是我自己搞的，原理是以二进制模式读取，把游戏文件里面的kvs、kns文件提取出来，使用
+
+foobar2000就可以正常播放，既可以解kvs音频的，也可以解kns/ktss(反正它俩文件头一样)音频的，
+
+想知道一个游戏文件里是那种格式，看它内部的数据块就行了，kvs的文件头是KOVS，kns的文件头
+
+是KTSS，无论是解ktsl2stbin文件，还是g1l文件，或者是FateSamuraiRemnant的file文件，都可以
+
+放心的解，此外ktsl2stbin也可以用vgm工具箱的高级切割机选择KTSS file解包，foobar2000可以
+
+解与ktsl2stbin同名不同后缀的ktsl2asbin，喜欢哪种解包方式是你们自己的事，怎么着都行
+
+
+
+双击脚本运行或者打开命令行窗口，输入python kvs和kns批量提取.py，接着会提示输入
+
+一个路径，把你需要解包的文件路径复制进去就行了
+
+如果你不会用py脚本的话可以使用我制作的exe程序，是由py脚本编译成的，可能会被360等软件误报，请相信我，绝对没有危害，不信自己用pyinstaler编译试试。
+
+
+如果你解的是ps4平台的，得使用vgm工具箱的advanced cutter，右边选择RIFF Style Header，点击上边的load，然后Output File Extensi输入at3或者at9
+
